@@ -1,0 +1,8 @@
+<Alloy>
+	<Window class="container">
+		<!--<ImageView id="imgLogin" image="/images/imageBG.jpg" /> -->
+		<Label id="label" class="titlefont">Fare Bid</Label>
+		<Button id="btnLogin"  class="titlefont" onClick="doLoginClick" title="L('loginBtn')"/>
+		<Button id="btnSignUp" class="titlefont" onClick="doSignUpClick" title="L('signUpBtn')"/>
+	</Window>
+</Alloy>

@@ -1,0 +1,35 @@
+"#tripBooking":{
+	title:L( 'appTitle')
+}
+
+"#mapview": {
+	top: "0%",
+	height: "80%",
+	region: {
+		latitude: 33.74511,
+		longitude: -84.38993,
+		latitudeDelta: 0.01,
+		longitudeDelta: 0.01
+	}
+}
+
+"#txtSource": {
+	top: "82%",
+	left: "5%",
+	width:"55%",
+	hintText:L( 'source')
+}
+
+"#txtDestination": {
+	top: "90%",
+	left: "5%",
+	width:"55%",
+	hintText:L( 'destination')
+}
+
+"#btnRequest": {
+	top: "85%",
+	left: "70%",
+	title:L( 'book')
+}
+

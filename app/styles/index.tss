@@ -1,0 +1,45 @@
+".container": {
+	backgroundColor: "#96967B"
+}
+
+".titlefont": {
+	font:{
+		fontSize:"20"
+	}
+}
+
+"#imgLogin": {
+	top:"0%",
+    left:"0%",
+    width: Ti.UI.FILL,
+	height: Ti.UI.FILL
+}
+
+"Label": {
+	top:"30%",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+}
+
+"Button": {
+	bottom:"5%",
+	width: "40%",
+	backgroundColor:"transparent",
+	borderColor: "white",
+	borderRadius:5,
+	borderWidth:2 
+}
+
+"#btnLogin": {
+	left:"5%"
+}
+"#btnSignUp": {
+	left:"55%"
+}
+
+"#label": {
+	font: {
+		fontSize:"20"
+	}
+}

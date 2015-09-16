@@ -1,0 +1,58 @@
+"#tripBooking":{
+	title:L( 'appTitle')
+}
+
+"#mapview": {
+	top: "0%",
+	height: "80%",
+	region: {
+		latitude: 33.74511,
+		longitude: -84.38993,
+		latitudeDelta: 0.01,
+		longitudeDelta: 0.01
+	}
+}
+
+"#driver1" : {
+    latitude: 33.74511,
+	longitude: -84.38993,
+    title: "Car 1",
+    subtitle: "30 min",
+    image:"/images/faceBook.jpg"
+    //pincolor: "$.mapview.model.ANNOTATION_RED
+}
+"#driver2" : {
+    latitude: 33.74511,
+	longitude: -84.38997,
+    title: "Car 2",
+    subtitle: "30 min"
+ //   pincolor: Alloy.Globals.Map.ANNOTATION_RED
+}
+
+"#driver3" : {
+    latitude: 33.74511,
+	longitude: -84.38999,
+    title: "Car 3",
+    subtitle: "30 min"
+      //  pincolor: Alloy.Globals.Map.ANNOTATION_RED
+}
+
+"#txtSource": {
+	top: "82%",
+	left: "5%",
+	width:"55%",
+	hintText:L( 'source')
+}
+
+"#txtDestination": {
+	top: "90%",
+	left: "5%",
+	width:"55%",
+	hintText:L( 'destination')
+}
+
+"#btnRequest": {
+	top: "85%",
+	title:"        Book        "
+}
+

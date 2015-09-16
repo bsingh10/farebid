@@ -1,0 +1,10 @@
+<Alloy>
+	<Window id="bookingConfirmation" backgroundColor="#96967B">
+		 <View id="mapview" module="ti.map" >
+		 	<!-- <Annotation id='driver1' myid='1' />
+		 	  <Annotation id='driver2' myid='2' />
+		 	   <Annotation id='driver3' myid='3' /> -->
+		 	</View>
+		<Button id="btnRequest"  class="titlefont" onClick="doRequestClick" />
+	</Window>
+</Alloy>

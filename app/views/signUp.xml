@@ -1,0 +1,14 @@
+<Alloy>
+	<Window id="signUp" backgroundColor="#96967B">
+		<Button id="btnFBSignUp"  class="titlefont" onClick="doFBSignUpClick" />
+		<Button id="btnGPlusSignUp"  class="titlefont" onClick="doGPlusSignUpClick"/>
+		<Label id="lblOr" class="titlefont">Or</Label>
+		<TextField id="txtFirstName" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED"  />
+		<TextField id="txtLastName" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED"  />
+		<TextField id="txtEmail" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED"  />
+		<TextField id="txtPhoneNo" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED"  />
+		<TextField id="txtPassword" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED"  />
+		<Button id="btnNext"  class="titlefont" onClick="doNextClick" />
+
+	</Window>
+</Alloy>

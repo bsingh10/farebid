@@ -1,0 +1,52 @@
+
+"#btnFBSignUp": {
+	top:"15%",
+	left:"5%",
+	width: "40%",
+	backgroundImage:"/images/faceBook.jpg"
+}
+"#btnGPlusSignUp": {
+	top:"15%",
+	left:"55%",
+	width: "40%",
+	backgroundImage:"/images/googlePlus.jpg"
+}
+
+
+"#lblOr": {
+	top:"30%"
+}
+"#btnNext": {
+	top:"85%",
+	width: "40%",
+	left:"30%",
+	title: L('next')
+}
+"#txtFirstName": {
+	top:"35%",
+	left:"5%",
+	hintText:L('firstName')
+}
+"#txtLastName": {
+	top:"35%",
+	left:"55%",
+	hintText:L('lastName')
+}
+"#txtEmail": {
+	top:"45%",
+	left:"5%",
+	hintText:L('email')
+}
+
+"#txtPhoneNo": {
+	top:"55%",
+	left:"5%",
+	hintText:L('phoneNo')
+}
+
+
+"#txtPassword": {
+		top:"65%",
+	left:"5%",
+	hintText:L('password')
+}

@@ -1,0 +1,25 @@
+"#login" :{
+	title:L('appTitle')
+}
+
+"#mapview" : {
+	top:"0%",
+	height : "80%",
+    region : {
+        latitude:33.74511,
+        longitude:-84.38993,
+        latitudeDelta:0.01,
+        longitudeDelta:0.01
+    }
+}
+
+"#btnDriveNow": {
+	top:"85%",
+	left:"5%",
+	title:L('driveNow')
+}
+"#btnDriveLater": {
+	top:"85%",
+	left:"55%",
+	title:L('driveLater')
+}
