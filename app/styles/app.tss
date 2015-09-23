@@ -28,6 +28,7 @@ overrode the settings with other TSS, XML, or JS settings:
 'TextField': {
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
+	borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDED
 }
 
 'Button': {
@@ -36,5 +37,15 @@ overrode the settings with other TSS, XML, or JS settings:
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
 	borderRadius:5,
-	borderWidth:2 
+	borderWidth:1
+}
+".titlefont": {
+	font:{
+		fontSize:"20"
+	}
+}
+".subtitlefont": {
+	font:{
+		fontSize:"14"
+	}
 }

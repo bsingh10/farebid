@@ -1,25 +1,45 @@
+var XHR = require("/xhr");
+var xhr = new XHR();
+var args = arguments[0] || {};
+
 var MapModule = require('ti.map');
 Titanium.Geolocation.purpose = "Recieve User Location";
 Titanium.Geolocation.accuracy = Titanium.Geolocation.ACCURACY_BEST;
 Titanium.Geolocation.distanceFilter = 10;
 
-function getLocation() {
-	//Get the current position and set it to the mapview
-	Titanium.Geolocation.getCurrentPosition(function(e) {
-		Ti.API.info("geo location " + JSON.stringify(e));
-		var region = {
-			latitude : e.coords.latitude,
-			longitude : e.coords.longitude,
-			animate : true,
-			latitudeDelta : 0.001,
-			longitudeDelta : 0.001
-		};
-		//Ti.API.info("map view"+JSON.stringify($));
-		//Ti.API.info("map view 2 "+JSON.stringify($.tripBooking.mapview));
-		//$.mapview.setLocation(region);
-	});
+function getLocation(e) {
+	Ti.API.info("current position view" + JSON.stringify(e));
+	//  LK.map_is_running = false;
+	if (!e.success || e.error) {
+		alert("Cannot get your location");
+		return;
+	}
+
+	Ti.Geolocation.removeEventListener('location', getLocation);
+	var region = {
+		latitude : e.coords.latitude,
+		longitude : e.coords.longitude,
+		animate : true,
+		latitudeDelta : 0.02,
+		longitudeDelta : 0.02
+	};
+	// $.mapview.setLocation(region);
+$.mapview.setRegion(region);
+xhr.get("https://maps.googleapis.com/maps/api/directions/json?origin=place_id:"+args.source+"&destination=place_id:"+args.destination+"&key=AIzaSyAl7zrQ1cB9Zw-3iMEqq6Gg3llze5tWuxk", onGeocodeSuccessCallback, onGeocodeErrorCallback);
 };
 
+function onGeocodeErrorCallback(e) {
+	// Handle your errors in here
+	Titanium.API.info("maps gocode error" +e.status + e.data);
+
+};
+
+function onGeocodeSuccessCallback(e) {
+	// Handle your errors in here
+	Titanium.API.info("maps gocode success" + e.status + e.data);
+
+
+};
 var A1 = MapModule.createAnnotation({
     latitude: 33.74411,
 	longitude: -84.38773,
@@ -74,10 +94,7 @@ var A3 = MapModule.createAnnotation({
     draggable: true
 });
 //getLocation();
-Titanium.Geolocation.addEventListener('location', function() {
-	getLocation();
-	//  Ti.API.info("map view"+JSON.stringify(map1));
-});
+Ti.Geolocation.addEventListener('location', getLocation);
 
 function doRequestClick(e) {
 	alert("requesting");
@@ -85,7 +102,5 @@ function doRequestClick(e) {
 $.mapview.addAnnotation(A1);
 $.mapview.addAnnotation(A2);
 $.mapview.addAnnotation(A3);
-$.bookingConfirmation.addEventListener('focus', function() {
-  //getLocation();
- // $.mapview.addAnnotation(random);
-});
+
+

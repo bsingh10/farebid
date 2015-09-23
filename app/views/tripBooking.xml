@@ -1,8 +1,8 @@
 <Alloy>
 	<Window id="tripBooking" backgroundColor="#96967B">
 		 <View id="mapview" module="ti.map" />
-		 <TextField id="txtSource" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED"  />
-		<TextField id="txtDestination" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED"  />
-		<Button id="btnRequest"  class="titlefont" onClick="doRequestClick" />
+		 <TextField id="txtSource"  class="subtitlefont" />
+		<TextField id="txtDestination"  class="subtitlefont" onReturn="doReturn" />
+		<Button id="btnRequest"  class="subtitlefont" onClick="doRequestClick" />
 	</Window>
 </Alloy>

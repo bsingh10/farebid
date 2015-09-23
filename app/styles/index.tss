@@ -2,11 +2,6 @@
 	backgroundColor: "#96967B"
 }
 
-".titlefont": {
-	font:{
-		fontSize:"20"
-	}
-}
 
 "#imgLogin": {
 	top:"0%",
