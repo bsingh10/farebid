@@ -1,32 +1,27 @@
-"#tripBooking":{
-	title:L( 'appTitle')
-}
-
+"#tripBooking": {
+	"title": L('appTitle')
+},
 "#mapview": {
-	top: "0%",
-	height: "80%",
-	userLocation: true
-}
-
+	"top": "0%",
+	"height": "80%",
+	"userLocation": "true"
+},
 "#txtSource": {
-	top: "80%",
-	left: "5%",
-	width:"90%",
-	hintText:L( 'source')
-}
-
+	"top": "80%",
+	"left": "5%",
+	"width": "90%",
+	"hintText": L('source')
+},
 "#txtDestination": {
-	top: "85%",
-	left: "5%",
-	width:"90%",
-	hintText:L( 'destination')
-}
-
+	"top": "85%",
+	"left": "5%",
+	"width": "90%",
+	"hintText": L('destination')
+},
 "#btnRequest": {
-	top: "93%",
-	left: "5%",
-	width: "90%",
-	height: "5%",
-	title:L( 'book')
+	"top": "93%",
+	"left": "5%",
+	"width": "90%",
+	//"height": "5%",
+	"title": L('book')
 }
-

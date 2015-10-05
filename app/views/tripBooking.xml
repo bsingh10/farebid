@@ -1,8 +1,8 @@
 <Alloy>
 	<Window id="tripBooking" backgroundColor="#96967B">
 		 <View id="mapview" module="ti.map" />
-		 <TextField id="txtSource"  class="subtitlefont" />
-		<TextField id="txtDestination"  class="subtitlefont" onReturn="doReturn" />
+		 <SearchBar id="txtSource" class="subtitlefont" showCancel="true"  />
+		<SearchBar id="txtDestination"  class="subtitlefont" onReturn="doReturn" />
 		<Button id="btnRequest"  class="subtitlefont" onClick="doRequestClick" />
 	</Window>
 </Alloy>

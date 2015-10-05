@@ -1,8 +1,7 @@
 <Alloy>
-	<Window id="login" backgroundColor="#96967B">
-		 <View id="mapview" module="ti.map" />
-		<Button id="btnDriveNow"  class="titlefont" onClick="doDriveNowClick" />
-		<Button id="btnDriveLater"  class="titlefont" onClick="doDriveLaterClick"/>
-
-	</Window>
+    <Window backgroundColor="#96967B" id="login">
+        <View id="mapview" module="ti.map"/>
+        <Button class="titlefont" id="btnDriveNow" onClick="doDriveNowClick"/>
+        <Button class="titlefont" id="btnDriveLater" onClick="doDriveLaterClick"/>
+    </Window>
 </Alloy>

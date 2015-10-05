@@ -89,6 +89,28 @@ win.open();
 
 */
 
+var locationCallback = function(e) {
+	Ti.API.info("current position view" + JSON.stringify(e));
+	//  LK.map_is_running = false;
+	if (!e.success || e.error) {
+		alert("Cannot get your location");
+		return;
+	}
+
+	Ti.Geolocation.removeEventListener('location', locationCallback);
+	var region = {
+		latitude : e.coords.latitude,
+		longitude : e.coords.longitude,
+		animate : true,
+		latitudeDelta : 0.02,
+		longitudeDelta : 0.02
+	};
+	// $.mapview.setLocation(region);
+$.mapview.setRegion(region);
+	
+		};
+	
+	Ti.Geolocation.addEventListener('location', locationCallback);
 function doDriveNowClick(e) {
    Alloy.createController('tripBooking').getView().open();
 }
