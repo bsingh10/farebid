@@ -7,21 +7,25 @@
 	"userLocation": "true"
 },
 "#txtSource": {
-	"top": "80%",
+	"top": "81%",
 	"left": "5%",
 	"width": "90%",
+		"height": "6%",
+	 "showCancel":false,
 	"hintText": L('source')
 },
 "#txtDestination": {
-	"top": "85%",
+	"top": "87%",
 	"left": "5%",
 	"width": "90%",
+		"height": "6%",
+	"showCancel":false,
 	"hintText": L('destination')
 },
 "#btnRequest": {
-	"top": "93%",
+	"top": "94%",
 	"left": "5%",
 	"width": "90%",
-	//"height": "5%",
+	"height": "5%",
 	"title": L('book')
 }

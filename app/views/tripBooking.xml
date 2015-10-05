@@ -1,8 +1,12 @@
 <Alloy>
 	<Window id="tripBooking" backgroundColor="#96967B">
 		 <View id="mapview" module="ti.map" />
-		 <SearchBar id="txtSource" class="subtitlefont" showCancel="true"  />
+		 <!--
+		 <SearchBar id="txtSource" class="subtitlefont" onChange="doSearchChange" onReturn="doSearchReturn"/>
 		<SearchBar id="txtDestination"  class="subtitlefont" onReturn="doReturn" />
+		-->
+		<SearchView id="txtSource" ns="Ti.UI.Android" platform="android" onChange="doSearchChange" onReturn="doSearchSubmit" />
+		<SearchView id="txtDestination" ns="Ti.UI.Android" platform="android"  onChange="doSearchChange" onReturn="doSearchSubmit"/>
 		<Button id="btnRequest"  class="subtitlefont" onClick="doRequestClick" />
 	</Window>
 </Alloy>

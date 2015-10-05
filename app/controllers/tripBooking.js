@@ -1,3 +1,4 @@
+var geo = require('geo');
 var XHR = require("/xhr");
 var xhr = new XHR();
 var loc1 = undefined;
@@ -170,6 +171,7 @@ $.tripBooking.addEventListener('focus', function() {
 function onGeocodeErrorCallback(e) {
 	// Handle your errors in here
 	Titanium.API.info("maps gocode error" +e.status + e.data);
+	
 
 };
 
@@ -193,5 +195,21 @@ function doReturn(e)
 	Ti.API.info("destination address"+add);
 	xhr.get("https://maps.googleapis.com/maps/api/geocode/json?address="+add+"&key=AIzaSyAl7zrQ1cB9Zw-3iMEqq6Gg3llze5tWuxk", onGeocodeSuccessCallback, onGeocodeErrorCallback);	
 	//1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=API_KEY
+
+}
+
+function doSearchChange(e)
+{
+	
+	
+
+	Ti.API.info("destination address"+e.source.value);
+	geo.forwardGeocode(e.source.value);
+	
+}
+
+function doSearchSubmit(e)
+{
+	Ti.API.info("destination address"+e.source.value);
 
 }
