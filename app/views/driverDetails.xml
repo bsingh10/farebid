@@ -1,0 +1,18 @@
+<Alloy>
+	<Window id="driverDetails" backgroundColor="#96967B" layout="vertical">
+		<View id="mapview" module="ti.map" top="0%" height="70%" animate="true" userLocation="true" userLocationButton="true" />
+		<View id="tempView">
+		<Label id="driverNamelbl"  text="Driver "></Label>
+		<Label id="driverName" text="Amit"></Label>
+		<Label id="tripFairlbl" text="Fair"></Label>
+		<Label id="tripFair" text="100$"></Label>
+		<Label id="driverTaxiNolbl" text="Taxi  "></Label>
+		<Label id="driverTaxiNo" text="Fx29G"></Label>
+		<Label id="driverLicencelbl" text="Licence  "></Label>
+		<Label id="driverLicence" text="G12398745"></Label>
+		<Label id="driverPhonelbl" text="Phone No: "></Label>
+		<Label id="driverPhone" text="+19084003739"></Label>
+		<Button id="btnConnect" title="Connect"></Button>
+		</View>
+	</Window>
+</Alloy>

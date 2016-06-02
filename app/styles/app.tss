@@ -42,4 +42,7 @@ overrode the settings with other TSS, XML, or JS settings:
 },
 ".subtitlefont": {
 	"font": {fontSize:"14"}
+},
+"TableView": {
+	height: Ti.UI.FILL
 }

@@ -4,7 +4,9 @@
 "#mapview": {
 	"top": "0%",
 	"height": "80%",
-	"region": "{latitude:33.74511,longitude:-84.38993,latitudeDelta:0.01,longitudeDelta:0.01}"
+	"region": "{latitude:33.74511,longitude:-84.38993,latitudeDelta:0.01,longitudeDelta:0.01}",
+	"userLocation": true,
+	"animate" : true
 },
 "#btnDriveNow": {
 	"top": "85%",

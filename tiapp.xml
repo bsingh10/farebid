@@ -5,7 +5,7 @@
     <version>1.0</version>
     <publisher>bhupendra</publisher>
     <url>http://</url>
-    <description/>
+    <description>undefined</description>
     <copyright>2015 by bhupendra</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
@@ -40,9 +40,11 @@
     </ios>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
         <manifest>
-            <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyD64YuT7jSavpMfAbJCNaXU8ZTukUAMdH0"/>
-            <application android:theme="@style/Theme.AppCompat.Translucent"/>
-            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="22"/>
+            <application android:theme="@style/Theme.AppCompat.Translucent">
+                <meta-data
+                    android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyD64YuT7jSavpMfAbJCNaXU8ZTukUAMdH0"/>
+            </application>
+            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="23"/>
         </manifest>
     </android>
     <mobileweb>
@@ -63,9 +65,10 @@
         <target device="mobileweb">false</target>
         <target device="windows">false</target>
     </deployment-targets>
-    <sdk-version>4.1.1.GA</sdk-version>
+    <sdk-version>5.2.2.GA</sdk-version>
     <plugins>
         <plugin version="1.0">ti.alloy</plugin>
     </plugins>
     <property name="appc-app-id" type="string">55cacdb7578c88713e780ce8</property>
+    <!-- <property name="com.google.android.maps.v2.API_KEY">AIzaSyD64YuT7jSavpMfAbJCNaXU8ZTukUAMdH0</property> -->
 </ti:app>

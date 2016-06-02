@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="loginBtn"> Log In</string>
+	<string name="signUpBtn">Sign Up</string>
+	<string name="firstName">First Name</string>
+	<string name="lastName">Last Name</string>
+	<string name="email">Email</string>
+	<string name="phoneNo">Mobile </string>
+	<string name="password">Password </string>
+	<string name="next">  Next  </string>
+	<string name="appTitle"> Fare Bid </string>
+	<string name="driveNow">   Bid Now   </string>
+	<string name="driveLater">  Bid Later  </string>
+	<string name="source">   Source Location  </string>
+	<string name="destination">  Destination Location  </string>
+	<string name="book">  Bid  </string>
+	
+	</resources>

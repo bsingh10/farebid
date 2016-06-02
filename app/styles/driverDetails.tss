@@ -1,0 +1,80 @@
+"#driverDetails": {
+	"title": L( 'appTitle')
+},
+/*
+"#mapview": {
+	"top": "0%",
+	///	"height": "75%",
+	"userLocation": true,
+	"animate" : true
+},
+*/
+"Label": {
+	"width": Ti.UI.SIZE,
+	"height": Ti.UI.SIZE,
+	"left": "7%"
+},
+
+"#driverNamelbl": {
+
+	"top": "0%"
+},
+
+"#driverName": {
+	"width": Ti.UI.SIZE,
+	"height": Ti.UI.SIZE,
+	"left": "50%",
+	"top": "0%"
+},
+"#tripFairlbl": {
+
+	"top": "9%"
+},
+
+"#tripFair": {
+	"width": Ti.UI.SIZE,
+	"height": Ti.UI.SIZE,
+	"left": "50%",
+	"top": "9%"
+},
+"#driverTaxiNolbl": {
+
+	"top": "18%"
+},
+"#driverTaxiNo": {
+	"width": Ti.UI.SIZE,
+	"height": Ti.UI.SIZE,
+	"left": "50%",
+	"top": "18%"
+},
+"#driverLicencelbl": {
+
+	"top": "27%"
+},
+"#driverLicence": {
+	"width": Ti.UI.SIZE,
+	"height": Ti.UI.SIZE,
+	"left": "50%",
+	"top": "27%"
+},
+"#driverPhonelbl": {
+
+	"top": "36%"
+},
+"#driverPhone": {
+	"width": Ti.UI.SIZE,
+	"height": Ti.UI.SIZE,
+	"left": "50%",
+	"top": "36%"
+},
+
+"#btnConnect": {
+	"top": "48%",
+	"left": "5%",
+	"width": "90%",
+	backgroundColor: "#60B7D19D",
+	//	"height": "5%",hintTextColor:"blue",
+	color: "#448009",
+	borderColor: "#448009",
+	"title": L( 'book')
+}

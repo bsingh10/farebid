@@ -3,29 +3,41 @@
 },
 "#mapview": {
 	"top": "0%",
-	"height": "80%",
+///	"height": "75%",
 	"userLocation": "true"
 },
 "#txtSource": {
-	"top": "81%",
+//	"top": "76%",
 	"left": "5%",
 	"width": "90%",
-		"height": "6%",
-	 "showCancel":false,
+//		"height": "6%",
+//	 "showCancel":false,
+//	 "borderRadius": "5",
+//	"borderWidth": "1",
+backgroundColor:"#60B7D19D",
+hintTextColor:"#60448009",
+color:"#448009",
 	"hintText": L('source')
 },
 "#txtDestination": {
-	"top": "87%",
+//	"top": "83%",
 	"left": "5%",
 	"width": "90%",
-		"height": "6%",
-	"showCancel":false,
+//		"height": "6%",
+//	"showCancel":false,
+backgroundColor:"#60B7D19D",
+hintTextColor:"#60448009",
+color:"#448009",
 	"hintText": L('destination')
+	
 },
 "#btnRequest": {
-	"top": "94%",
+//	"top": "93%",
 	"left": "5%",
 	"width": "90%",
-	"height": "5%",
+	backgroundColor:"#60B7D19D",
+//	"height": "5%",hintTextColor:"blue",
+color:"#448009",
+borderColor:"#448009",
 	"title": L('book')
 }
