@@ -9,8 +9,8 @@
 	<string name="password">Password </string>
 	<string name="next">  Next  </string>
 	<string name="appTitle"> Fare Bid </string>
-	<string name="driveNow">   Drive Now   </string>
-	<string name="driveLater">  Drive Later  </string>
+	<string name="driveNow">   Bid Now   </string>
+	<string name="driveLater">  Bid Later  </string>
 	<string name="source">   Source Location  </string>
 	<string name="destination">  Destination Location  </string>
 	<string name="book">  Bid  </string>
